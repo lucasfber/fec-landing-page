@@ -1,0 +1,118 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+
+body {
+  font-family: sans-serif; /* Change this */
+}
+
+/* Header */
+header {
+  background-color: $deepest-blue;
+  display: flex;
+  padding: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+
+  .btn-menu {
+    width: 2rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-start;
+    cursor: pointer;
+
+    .bar,
+    .bar::before,
+    .bar::after {
+      width: 2rem;
+      height: 0.2rem;
+      background-color: $main-white;
+    }
+
+    .bar {
+      position: relative;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+      }
+
+      &::after {
+        top: -0.8rem;
+      }
+      &::before {
+        bottom: -0.8rem;
+      }
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    margin-right: 1rem;
+    img {
+      width: 6.4rem;
+    }
+  }
+
+  .overlay {
+    position: relative;
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 6rem 0;
+      background-color: rgba($deep-blue, $alpha: 1);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .btn-close {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 1.6rem;
+        right: 1.6rem;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 0;
+          width: 3rem;
+          height: 0.25rem;
+          background-color: $main-white;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+
+      li {
+        margin: 3rem 0;
+
+        a {
+          font-family: HeadingPro;
+          color: #fff;
+          font-size: 3.2rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

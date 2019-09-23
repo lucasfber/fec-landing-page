@@ -1,0 +1,13 @@
+{
+  "name": "fec-fan-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Bertoldo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sass --watch scss:css"
+  },
+  "dependencies": {
+    "sass": "^1.22.12"
+  }
+}

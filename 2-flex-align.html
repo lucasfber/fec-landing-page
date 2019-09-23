@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        background-color: #ccc;
+        height: 100vh; /* para o alinhamento vert é necessario height */
+        justify-content: center;
+        align-items: center; /* por default é stretch, estica pra ocupar toda altura */
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        /* align-content - align rows vertically */
+        /* align-content: center;  align-self so funciona se nao tiver align-content*/
+      }
+      .item {
+        padding: 1rem;
+        background-color: lightblue;
+        margin: 0.75rem;
+        text-align: center;
+        font-family: sans-serif;
+        border: 1px solid #222;
+        flex-basis: 300px;
+      }
+      .item-2 {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1"><h3>Item 1</h3></div>
+      <div class="item item-2"><h3>Item 2</h3></div>
+      <div class="item item-3"><h3>Item 3</h3></div>
+      <!-- <div class="item item-1"><h3>Item 1</h3></div>
+      <div class="item item-2"><h3>Item 2</h3></div>
+      <div class="item item-3"><h3>Item 3</h3></div> -->
+    </div>
+  </body>
+</html>
