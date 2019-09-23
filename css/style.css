@@ -109,6 +109,7 @@ header .overlay {
   position: relative;
 }
 header .overlay .navbar {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -116,10 +117,14 @@ header .overlay .navbar {
   background-color: #01061d;
   width: 100%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  transform: translateX(-100%);
+  transition: transform 750ms;
+}
+header .overlay .navbar.visible {
+  transform: translateX(0);
 }
 header .overlay .navbar .btn-close {
   width: 3.5rem;
@@ -149,9 +154,16 @@ header .overlay .navbar li {
 }
 header .overlay .navbar li a {
   font-family: HeadingPro;
+  font-style: italic;
+  font-weight: bold;
   color: #fff;
   font-size: 3.2rem;
   text-transform: uppercase;
+  transition: color 500ms;
+}
+header .overlay .navbar li a:hover {
+  color: #ba8843;
+  color: #ee3124;
 }
 
 /*# sourceMappingURL=style.css.map */

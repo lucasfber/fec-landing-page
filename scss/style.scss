@@ -63,6 +63,7 @@ header {
     position: relative;
 
     .navbar {
+      display: flex;
       position: fixed;
       top: 0;
       left: 0;
@@ -70,10 +71,15 @@ header {
       background-color: rgba($deep-blue, $alpha: 1);
       width: 100%;
       height: 100vh;
-      display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      transform: translateX(-100%);
+      transition: transform 750ms;
+
+      &.visible {
+        transform: translateX(0);
+      }
 
       .btn-close {
         width: 3.5rem;
@@ -108,9 +114,17 @@ header {
 
         a {
           font-family: HeadingPro;
+          font-style: italic;
+          font-weight: bold;
           color: #fff;
           font-size: 3.2rem;
           text-transform: uppercase;
+          transition: color 500ms;
+
+          &:hover {
+            color: $main-golden-yellow;
+            color: $main-red;
+          }
         }
       }
     }
