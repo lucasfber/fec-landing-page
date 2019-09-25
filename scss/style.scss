@@ -13,6 +13,7 @@ header {
   padding: 1.6rem;
   align-items: center;
   justify-content: space-between;
+
   .btn-menu {
     width: 2rem;
     height: 3rem;
@@ -134,23 +135,17 @@ header {
 }
 
 /* Last News Showase */
-.last-news-slider {
+.slider {
   width: 100%;
   position: relative;
 
   .slide {
+    display: none;
+    background-color: $deep-blue;
     max-width: 100%;
     position: relative;
     transform: translateX(100%);
-    display: none;
-
-    &.active {
-      transform: translateX(0) scale(1);
-      display: block;
-
-      h2 {
-      }
-    }
+    transition: all 750ms;
 
     &::before {
       position: absolute;
@@ -166,14 +161,40 @@ header {
 
     img {
       max-width: 100%;
-      //animation: from-right 400ms linear 1.2s;
+    }
+
+    &.active {
+      display: block;
+      transform: translateX(0) scale(1);
+
+      &.from-left {
+        img {
+          border-radius: 5px;
+          animation: from-left 400ms linear;
+        }
+
+        h2 {
+          animation: from-right 400ms linear;
+        }
+      }
+
+      &.from-right {
+        img {
+          border-radius: 5px;
+          animation: from-right 400ms linear;
+        }
+
+        h2 {
+          animation: from-left 400ms linear;
+        }
+      }
     }
 
     h2 {
       padding: 1.2rem 1.2rem 1rem 1.2rem;
       position: absolute;
       bottom: 0;
-      font-size: 2rem;
+      font-size: 2em;
       color: $main-white;
       font-family: HeadingPro;
       font-style: italic;
@@ -223,7 +244,6 @@ header {
     0% {
       transform: translateX(100%);
     }
-
     100% {
       transform: translateX(0);
     }
