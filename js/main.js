@@ -15,6 +15,11 @@ $(document).ready(function() {
     navbar.toggleClass("visible");
   });
 
+  const initSlider = function() {
+    const firstSlide = $(".slider .slide:nth-child(1)");
+    firstSlide.addClass("from-right");
+  };
+
   const nextSlide = function() {
     if (slides.eq(slideIndex).hasClass("from-left")) {
       slides.eq(slideIndex).toggleClass("active from-left");
@@ -48,4 +53,6 @@ $(document).ready(function() {
 
   rightArrow.click(nextSlide);
   leftArrow.click(previousSlide);
+
+  initSlider();
 });

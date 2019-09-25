@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding: 2rem 1.6rem;
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: HeadingPro;
   src: url(../fonts/heading-pro/Heading-Pro-Regular-trial.ttf);
@@ -52,6 +57,20 @@ a {
 body {
   font-family: sans-serif;
   /* Change this */
+}
+
+/* Reusable classes */
+.btn {
+  border: none;
+  outline: none;
+  padding: 1.6rem 2rem;
+  display: inline-block;
+  transition: background-color 450ms;
+  color: #fff;
+  text-transform: uppercase;
+  width: 90%;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
 }
 
 /* Header */
@@ -255,6 +274,144 @@ header .overlay .navbar li a:hover {
   100% {
     transform: translateX(0);
   }
+}
+
+/* Next Match */
+.next-match,
+.latest-result {
+  text-align: center;
+  padding: 2rem 1.6rem;
+  color: #01061d;
+  background-color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.next-match h2,
+.latest-result h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-style: italic;
+}
+.next-match .match-info,
+.latest-result .match-info {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.next-match .match-teams,
+.latest-result .match-teams {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+  font-style: normal;
+}
+.next-match .match-teams .team,
+.latest-result .match-teams .team {
+  flex: 1;
+}
+.next-match .match-teams .team img,
+.latest-result .match-teams .team img {
+  height: 6rem;
+}
+.next-match .match-teams .team p,
+.latest-result .match-teams .team p {
+  font-size: 1.5rem;
+}
+.next-match .match-teams h3,
+.latest-result .match-teams h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.next-match .match-location,
+.latest-result .match-location {
+  margin-top: 1.5rem;
+}
+.next-match .match-location p,
+.latest-result .match-location p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.next-match .btn-buy-tickets,
+.next-match .btn-full-report,
+.latest-result .btn-buy-tickets,
+.latest-result .btn-full-report {
+  margin-top: 2rem;
+  background-color: #035aa4;
+}
+.next-match .btn-buy-tickets:hover,
+.next-match .btn-full-report:hover,
+.latest-result .btn-buy-tickets:hover,
+.latest-result .btn-full-report:hover {
+  background-color: #ee3124;
+  color: #fff;
+}
+
+.latest-result {
+  background-color: #01061d;
+  color: #fff;
+}
+.latest-result .final-result h3 {
+  display: inline-block;
+  font-size: 4.5rem;
+  margin: 0 1.6rem;
+}
+.latest-result .btn-full-report {
+  background-color: #ee3124;
+}
+.latest-result .btn-full-report:hover {
+  background-color: #fff;
+  color: #01061d;
+}
+
+.shop-list {
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.shop-list h2 {
+  font-size: 2.4rem;
+  font-style: italic;
+  color: #01061d;
+}
+.shop-list .product {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #01061d;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+.shop-list .product p {
+  color: #e0b06d;
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+}
+.shop-list .product img {
+  max-width: 100%;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.shop-list .product .btn-shop-now {
+  background-color: #ee3124;
+  padding: 2rem;
+}
+.shop-list .product .btn-shop-now p {
+  margin: 0;
+  font-size: 1.6rem;
+  display: inline-block;
+  color: #fff;
+}
+.shop-list .product .btn-shop-now img {
+  border-radius: 0;
+  width: 1.6rem;
+  margin-left: 0.2rem;
+}
+.shop-list .product .supplier {
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  padding: 1.6rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

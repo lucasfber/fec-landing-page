@@ -6,6 +6,20 @@ body {
   font-family: sans-serif; /* Change this */
 }
 
+/* Reusable classes */
+.btn {
+  border: none;
+  outline: none;
+  padding: 1.6rem 2rem;
+  display: inline-block;
+  transition: background-color 450ms;
+  color: #fff;
+  text-transform: uppercase;
+  width: 90%;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+}
+
 /* Header */
 header {
   background-color: $deepest-blue;
@@ -246,6 +260,155 @@ header {
     }
     100% {
       transform: translateX(0);
+    }
+  }
+}
+
+/* Next Match */
+.next-match,
+.latest-result {
+  text-align: center;
+  padding: 2rem 1.6rem;
+  color: $deep-blue;
+  background-color: $main-white;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-style: italic;
+  }
+
+  .match-info {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  .match-teams {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    font-style: normal;
+
+    .team {
+      flex: 1;
+
+      img {
+        height: 6rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+
+  .match-location {
+    margin-top: 1.5rem;
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+  }
+
+  .btn-buy-tickets,
+  .btn-full-report {
+    margin-top: 2rem;
+    background-color: $main-blue;
+
+    &:hover {
+      background-color: $main-red;
+      color: #fff;
+    }
+  }
+}
+
+.latest-result {
+  background-color: $deep-blue;
+  color: $main-white;
+
+  .final-result {
+    h3 {
+      display: inline-block;
+      font-size: 4.5rem;
+      margin: 0 1.6rem;
+    }
+  }
+
+  .btn-full-report {
+    background-color: $main-red;
+
+    &:hover {
+      background-color: $main-white;
+      color: $deep-blue;
+    }
+  }
+}
+
+.shop-list {
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+
+  h2 {
+    font-size: 2.4rem;
+    font-style: italic;
+    color: $deep-blue;
+  }
+
+  .product {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: $deep-blue;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+
+    p {
+      color: $main-yellow;
+      font-size: 1.8rem;
+      margin: 1.5rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      border-top-left-radius: 0.8rem;
+      border-top-right-radius: 0.8rem;
+    }
+
+    .btn-shop-now {
+      background-color: $main-red;
+      padding: 2rem;
+
+      p {
+        margin: 0;
+        font-size: 1.6rem;
+        display: inline-block;
+        color: #fff;
+      }
+
+      img {
+        border-radius: 0;
+        width: 1.6rem;
+        margin-left: 0.2rem;
+      }
+    }
+
+    .supplier {
+      border-bottom-right-radius: 0.8rem;
+      border-bottom-left-radius: 0.8rem;
+      //border-top: 0.1rem solid $main-white;
+      padding: 1.6rem;
+      margin-top: 2rem;
     }
   }
 }
