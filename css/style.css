@@ -381,6 +381,10 @@ header .overlay .navbar li a:hover {
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
+  display: none;
+}
+.shop-list .product.active {
+  display: block;
 }
 .shop-list .product p {
   color: #e0b06d;
@@ -412,6 +416,31 @@ header .overlay .navbar li a:hover {
   border-bottom-left-radius: 0.8rem;
   padding: 1.6rem;
   margin-top: 2rem;
+}
+.shop-list .products-controls {
+  max-width: 100%;
+  padding: 2rem 1.6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shop-list .products-controls .control {
+  width: 33.3%;
+  height: 0.6rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background-color: #dfdfdf;
+  transition: background-color 680ms;
+}
+.shop-list .products-controls .control.active {
+  background-color: #ee3124;
+}
+.shop-list .products-controls .control:hover {
+  width: 4.2rem;
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -372,6 +372,11 @@ header {
     border-top-right-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     border-bottom-left-radius: 0.8rem;
+    display: none;
+
+    &.active {
+      display: block;
+    }
 
     p {
       color: $main-yellow;
@@ -406,9 +411,39 @@ header {
     .supplier {
       border-bottom-right-radius: 0.8rem;
       border-bottom-left-radius: 0.8rem;
-      //border-top: 0.1rem solid $main-white;
       padding: 1.6rem;
       margin-top: 2rem;
+    }
+  }
+
+  .products-controls {
+    max-width: 100%;
+    padding: 2rem 1.6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .control {
+      //width: 4rem;
+      width: 33.3%;
+      height: 0.6rem;
+      margin: 0 1rem;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      background-color: #dfdfdf;
+      transition: background-color 680ms;
+
+      &.active {
+        background-color: $main-red;
+      }
+
+      &:hover {
+        //background-color: rgb(4, 12, 48);
+        width: 4.2rem;
+        background-color: green;
+      }
     }
   }
 }
