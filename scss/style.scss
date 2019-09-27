@@ -372,10 +372,13 @@ header {
     border-top-right-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     border-bottom-left-radius: 0.8rem;
+    transform: translateX(100%);
+    transition: all 750ms;
     display: none;
 
     &.active {
       display: block;
+      transform: translateX(0) scale(1);
     }
 
     p {
@@ -425,24 +428,17 @@ header {
     justify-content: space-between;
 
     .control {
-      //width: 4rem;
       width: 33.3%;
       height: 0.6rem;
       margin: 0 1rem;
       cursor: pointer;
       position: relative;
       display: inline-block;
-      background-color: #dfdfdf;
+      background-color: #cfcfcf;
       transition: background-color 680ms;
 
       &.active {
         background-color: $main-red;
-      }
-
-      &:hover {
-        //background-color: rgb(4, 12, 48);
-        width: 4.2rem;
-        background-color: green;
       }
     }
   }

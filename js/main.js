@@ -5,6 +5,9 @@ $(document).ready(function() {
   const leftArrow = $(".left-arrow");
   const rightArrow = $(".right-arrow");
   const slides = $(".slider .slide");
+  const products = $(".product");
+  const control = $(".control");
+
   let slideIndex = 0;
 
   btnMenu.click(function() {
@@ -55,4 +58,13 @@ $(document).ready(function() {
   leftArrow.click(previousSlide);
 
   initSlider();
+
+  control.click(function() {
+    const clickedControlIndex = control.index($(this));
+    products.removeClass("active");
+    control.removeClass("active");
+
+    products.eq(clickedControlIndex).addClass("active");
+    $(this).addClass("active");
+  });
 });
