@@ -54,6 +54,10 @@ section {
   src: url("../fonts/lato/Lato-Bold.ttf");
   font-weight: 700;
 }
+/* 
+Photo by Noelle Otto from Pexels
+Photo by Markus Spiske temporausch.com from Pexels
+*/
 body {
   font-family: sans-serif;
   /* Change this */
@@ -211,14 +215,12 @@ header .overlay .navbar li a:hover {
   transform: translateX(0) scale(1);
 }
 .slider .slide.active.from-left img {
-  border-radius: 5px;
   animation: from-left 400ms linear;
 }
 .slider .slide.active.from-left h2 {
   animation: from-right 400ms linear;
 }
 .slider .slide.active.from-right img {
-  border-radius: 5px;
   animation: from-right 400ms linear;
 }
 .slider .slide.active.from-right h2 {
@@ -336,7 +338,7 @@ header .overlay .navbar li a:hover {
 .latest-result .btn-buy-tickets,
 .latest-result .btn-full-report {
   margin-top: 2rem;
-  background-color: #035aa4;
+  background-color: #ee3124;
 }
 .next-match .btn-buy-tickets:hover,
 .next-match .btn-full-report:hover,
@@ -356,7 +358,7 @@ header .overlay .navbar li a:hover {
   margin: 0 1.6rem;
 }
 .latest-result .btn-full-report {
-  background-color: #ee3124;
+  background-color: #035aa4;
 }
 .latest-result .btn-full-report:hover {
   background-color: #fff;
@@ -439,6 +441,64 @@ header .overlay .navbar li a:hover {
   transition: background-color 680ms;
 }
 .shop-list .products-controls .control.active {
+  background-color: #ee3124;
+}
+
+/* Last News */
+.last-news {
+  background-color: #01061d;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  max-width: 100%;
+}
+.last-news .news {
+  display: flex;
+  padding: 1.6rem 0;
+}
+.last-news .news img {
+  max-width: 50%;
+  border-radius: 0.2rem;
+}
+.last-news .news .news-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.6rem;
+}
+.last-news .news .news-info .news-title {
+  flex: 2;
+  font-size: 1.8rem;
+}
+.last-news .news .news-info .news-details {
+  margin-top: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.last-news .news .news-info .news-details p {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.last-news .news .news-info .news-details p span {
+  width: 1.2rem;
+}
+.last-news .news .news-info .news-details p span img {
+  width: 1.2rem;
+}
+.last-news .news .news-info .news-details .news-category {
+  background-color: #ee3124;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+.last-news .btn-load-more {
+  margin: 2rem auto 0 auto;
+  background-color: #035aa4;
+  display: block;
+  width: 50%;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.last-news .btn-load-more:hover {
   background-color: #ee3124;
 }
 

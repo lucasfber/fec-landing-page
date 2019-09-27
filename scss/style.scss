@@ -2,6 +2,11 @@
 @import "colors";
 @import "fonts";
 
+/* 
+Photo by Noelle Otto from Pexels
+Photo by Markus Spiske temporausch.com from Pexels
+*/
+
 body {
   font-family: sans-serif; /* Change this */
 }
@@ -183,7 +188,6 @@ header {
 
       &.from-left {
         img {
-          border-radius: 5px;
           animation: from-left 400ms linear;
         }
 
@@ -194,7 +198,6 @@ header {
 
       &.from-right {
         img {
-          border-radius: 5px;
           animation: from-right 400ms linear;
         }
 
@@ -322,7 +325,7 @@ header {
   .btn-buy-tickets,
   .btn-full-report {
     margin-top: 2rem;
-    background-color: $main-blue;
+    background-color: $main-red;
 
     &:hover {
       background-color: $main-red;
@@ -344,7 +347,7 @@ header {
   }
 
   .btn-full-report {
-    background-color: $main-red;
+    background-color: $main-blue;
 
     &:hover {
       background-color: $main-white;
@@ -440,6 +443,75 @@ header {
       &.active {
         background-color: $main-red;
       }
+    }
+  }
+}
+
+/* Last News */
+
+.last-news {
+  background-color: $deep-blue;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  max-width: 100%;
+
+  .news {
+    display: flex;
+    padding: 1.6rem 0;
+
+    img {
+      max-width: 50%;
+      border-radius: 0.2rem;
+    }
+
+    .news-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1.6rem;
+
+      .news-title {
+        flex: 2;
+        font-size: 1.8rem;
+      }
+
+      .news-details {
+        margin-top: 1rem;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        p {
+          display: inline-block;
+          font-size: 1.2rem;
+          span {
+            width: 1.2rem;
+
+            img {
+              width: 1.2rem;
+            }
+          }
+        }
+
+        .news-category {
+          background-color: $main-red;
+          padding: 0.5rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .btn-load-more {
+    margin: 2rem auto 0 auto;
+    background-color: $main-blue;
+    display: block;
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.4rem;
+
+    &:hover {
+      background-color: $main-red;
     }
   }
 }
