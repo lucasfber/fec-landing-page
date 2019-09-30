@@ -75,6 +75,14 @@ body {
   width: 90%;
   font-family: "Oswald", sans-serif;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn-md {
+  margin: 2rem auto 0 auto;
+  width: 50%;
+  padding: 1rem;
+  font-size: 1.4rem;
 }
 
 /* Header */
@@ -451,6 +459,12 @@ header .overlay .navbar li a:hover {
   font-family: "Oswald", sans-serif;
   max-width: 100%;
 }
+.last-news h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-style: italic;
+  text-align: center;
+}
 .last-news .news {
   display: flex;
   padding: 1.6rem 0;
@@ -500,6 +514,119 @@ header .overlay .navbar li a:hover {
 }
 .last-news .btn-load-more:hover {
   background-color: #ee3124;
+}
+
+/* Membership */
+.membership {
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  /* FIX THIS, BTN-JOIN-MEMBERSHIP IN 3 PLACES */
+}
+.membership h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-style: italic;
+  text-align: center;
+}
+.membership .membership-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(216, 5, 5, 0.4), rgba(4, 18, 65, 0.6)), url("../img/news-2.jpg") no-repeat center center/cover;
+  width: 100%;
+  min-height: 30rem;
+  color: #fff;
+}
+.membership .membership-banner h2 {
+  font-size: 4.2rem;
+  line-height: 1;
+}
+.membership .membership-banner .btn-join-membership {
+  margin-top: 2.2rem;
+  background-color: #ee3124;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+.membership .membership-benefits {
+  padding: 1.6rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.membership .membership-benefits h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #e0b06d;
+  font-style: italic;
+}
+.membership .membership-benefits h4 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+.membership .membership-benefits li {
+  margin-top: 1rem;
+  text-align: left;
+}
+.membership .membership-benefits li p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.membership .membership-benefits .btn-join-membership {
+  background-color: #ee3124;
+}
+.membership .btn-join-membership:hover {
+  background-color: #01061d;
+  color: #e0b06d;
+}
+
+.newsletter {
+  background-color: #01061d;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+.newsletter h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-style: italic;
+  text-align: center;
+}
+.newsletter h4 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.newsletter form input {
+  display: block;
+  outline: none;
+  border: 1px solid #fff;
+  width: 100%;
+  color: #fff;
+  background-color: #01061d;
+  margin-top: 1.6rem;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+.newsletter form input::placeholder {
+  color: #fff;
+}
+.newsletter form input:focus {
+  border: 2px solid #e0b06d;
+}
+.newsletter form .btn-subscribe {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+  border: 1px solid #fff;
+  background-color: #01061d;
+  transition: color 500ms, border 500ms;
+}
+.newsletter form .btn-subscribe:hover {
+  color: #e0b06d;
+  border: 1px solid #e0b06d;
 }
 
 /*# sourceMappingURL=style.css.map */
