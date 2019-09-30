@@ -25,6 +25,13 @@ section {
   text-transform: uppercase;
 }
 
+.icon {
+  color: #fff;
+}
+.icon::before {
+  margin: 0;
+}
+
 @font-face {
   font-family: HeadingPro;
   src: url(../fonts/heading-pro/Heading-Pro-Regular-trial.ttf);
@@ -646,6 +653,101 @@ header .overlay .navbar li a:hover {
   display: block;
   margin: 0 auto;
   margin-top: 4.5rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #01061d;
+  padding: 2rem 0;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .social h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-style: italic;
+  text-align: center;
+}
+.footer .social ul {
+  margin-top: 1.6rem;
+}
+.footer .social ul li {
+  display: inline-block;
+  margin-right: 1.6rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+.footer .social ul li:nth-child(1) {
+  margin-left: 1.6rem;
+}
+.footer .social ul li:hover {
+  border: 2px solid #e0b06d;
+}
+.footer .social ul li:hover span {
+  color: #e0b06d;
+}
+.footer .footer-links {
+  margin-top: 4rem;
+}
+.footer .footer-links li {
+  margin-top: 1.2rem;
+}
+.footer .footer-links li a {
+  color: #fff;
+  padding: 1rem 1rem 1rem 0;
+  font-size: 1.4rem;
+}
+.footer .footer-logo {
+  margin-top: 4rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.footer .footer-logo::before, .footer .footer-logo::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 40%;
+  height: 0.2rem;
+  background-color: #fff;
+}
+.footer .footer-logo::after {
+  right: 0;
+}
+.footer .footer-logo img {
+  width: 5rem;
+}
+.footer .secondary-links {
+  margin-top: 1.6rem;
+}
+.footer .secondary-links li {
+  margin-top: 1.2rem;
+}
+.footer .secondary-links li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+}
+.footer .secondary-links p {
+  margin-top: 1.6rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.footer .secondary-links p span {
+  color: #efefef;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */

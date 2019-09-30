@@ -24,3 +24,10 @@ section {
   padding: 2rem 1.6rem;
   text-transform: uppercase;
 }
+
+.icon {
+  color: #fff;
+  &::before {
+    margin: 0;
+  }
+}

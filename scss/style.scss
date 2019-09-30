@@ -689,3 +689,117 @@ header {
     margin-top: 4.5rem;
   }
 }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: $deep-blue;
+  padding: 2rem 0;
+  color: $main-white;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-weight: 700;
+      font-size: 2.4rem;
+      font-style: italic;
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 1.6rem;
+
+      li {
+        display: inline-block;
+        margin-right: 1.6rem;
+        border: 2px solid $main-white;
+        border-radius: 50%;
+        padding: 1.2rem;
+
+        &:nth-child(1) {
+          margin-left: 1.6rem;
+        }
+
+        &:hover {
+          border: 2px solid $main-yellow;
+          span {
+            color: $main-yellow;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-links {
+    margin-top: 4rem;
+
+    li {
+      margin-top: 1.2rem;
+
+      a {
+        color: $main-white;
+        padding: 1rem 1rem 1rem 0;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .footer-logo {
+    margin-top: 4rem;
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      content: "";
+      width: 40%;
+      height: 0.2rem;
+      background-color: $main-white;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    img {
+      width: 5rem;
+    }
+  }
+
+  .secondary-links {
+    margin-top: 1.6rem;
+
+    li {
+      margin-top: 1.2rem;
+
+      a {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.2rem;
+      }
+    }
+
+    p {
+      margin-top: 1.6rem;
+      text-align: center;
+      font-size: 1.2rem;
+
+      span {
+        color: $main-light-gray;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}
