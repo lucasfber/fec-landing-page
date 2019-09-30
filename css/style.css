@@ -599,6 +599,7 @@ header .overlay .navbar li a:hover {
 }
 .newsletter form input {
   display: block;
+  font-family: "Oswald", sans-serif;
   outline: none;
   border: 1px solid #fff;
   width: 100%;
