@@ -1,3 +1,13 @@
+/*
+ * Mixin printing a linear-gradient
+ * as well as a plain color fallback
+ * and the `-webkit-` prefixed declaration
+ * @access public
+ * @param {Keyword | Angle} $direction - Linear gradient direction
+ * @param {Arglist} $color-stops - List of color-stops composing the gradient
+ *
+ * @see https://www.sitepoint.com/building-linear-gradient-mixin-sass/
+ */
 html {
   font-size: 0.625rem;
 }
@@ -92,21 +102,24 @@ body {
   font-size: 1.4rem;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* Header */
-header {
+header .container {
   background-color: #0a1324;
   display: flex;
   padding: 1.6rem;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 9.9rem;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  margin-bottom: 9.9rem;
+  width: 100%;
 }
-header .btn-menu {
+header .container .btn-menu {
   width: 2rem;
   height: 3rem;
   border-radius: 0.5rem;
@@ -117,38 +130,38 @@ header .btn-menu {
   justify-self: flex-start;
   cursor: pointer;
 }
-header .btn-menu .bar,
-header .btn-menu .bar::before,
-header .btn-menu .bar::after {
+header .container .btn-menu .bar,
+header .container .btn-menu .bar::before,
+header .container .btn-menu .bar::after {
   width: 2rem;
   height: 0.2rem;
   background-color: #fff;
 }
-header .btn-menu .bar {
+header .container .btn-menu .bar {
   position: relative;
 }
-header .btn-menu .bar::after, header .btn-menu .bar::before {
+header .container .btn-menu .bar::after, header .container .btn-menu .bar::before {
   content: "";
   position: absolute;
 }
-header .btn-menu .bar::after {
+header .container .btn-menu .bar::after {
   top: -0.8rem;
 }
-header .btn-menu .bar::before {
+header .container .btn-menu .bar::before {
   bottom: -0.8rem;
 }
-header .logo {
+header .container .logo {
   display: inline-block;
   margin-right: 1rem;
 }
-header .logo img {
+header .container .logo img {
   width: 6.4rem;
 }
-header .overlay {
+header .container .overlay {
   position: relative;
-  z-index: 1;
+  z-index: 12;
 }
-header .overlay .navbar {
+header .container .overlay .navbar {
   display: flex;
   position: fixed;
   top: 0;
@@ -162,13 +175,17 @@ header .overlay .navbar {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
+  -webkit-transition: transform 750ms;
+  -o-transition: transform 750ms;
   transition: transform 750ms;
 }
-header .overlay .navbar.visible {
+header .container .overlay .navbar.visible {
   transform: translateX(0);
 }
-header .overlay .navbar .btn-close {
+header .container .overlay .navbar .btn-close {
   width: 3.5rem;
   height: 3.5rem;
   position: absolute;
@@ -176,7 +193,7 @@ header .overlay .navbar .btn-close {
   right: 1.6rem;
   cursor: pointer;
 }
-header .overlay .navbar .btn-close::before, header .overlay .navbar .btn-close::after {
+header .container .overlay .navbar .btn-close::before, header .container .overlay .navbar .btn-close::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -185,16 +202,16 @@ header .overlay .navbar .btn-close::before, header .overlay .navbar .btn-close::
   height: 0.25rem;
   background-color: #fff;
 }
-header .overlay .navbar .btn-close::before {
+header .container .overlay .navbar .btn-close::before {
   transform: rotate(45deg);
 }
-header .overlay .navbar .btn-close::after {
+header .container .overlay .navbar .btn-close::after {
   transform: rotate(-45deg);
 }
-header .overlay .navbar li {
+header .container .overlay .navbar li {
   margin: 3rem 0;
 }
-header .overlay .navbar li a {
+header .container .overlay .navbar li a {
   font-family: HeadingPro;
   font-style: italic;
   font-weight: bold;
@@ -203,7 +220,7 @@ header .overlay .navbar li a {
   text-transform: uppercase;
   transition: color 500ms;
 }
-header .overlay .navbar li a:hover {
+header .container .overlay .navbar li a:hover {
   color: #ba8843;
   color: #ee3124;
 }

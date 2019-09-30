@@ -67,4 +67,8 @@ $(document).ready(function() {
     products.eq(clickedControlIndex).addClass("active");
     $(this).addClass("active");
   });
+
+  setInterval(function() {
+    nextSlide();
+  }, 3000);
 });

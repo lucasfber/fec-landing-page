@@ -8,6 +8,7 @@
     "dev": "sass --watch scss:css"
   },
   "dependencies": {
-    "sass": "^1.22.12"
+    "sass": "^1.22.12",
+    "sass-autoprefixer": "^1.0.1"
   }
 }
