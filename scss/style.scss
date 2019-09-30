@@ -575,7 +575,7 @@ header {
 
   .membership-benefits {
     padding: 1.6rem;
-    background-color: #efefef;
+    background-color: $main-light-gray;
     text-align: center;
     h3 {
       font-size: 2.4rem;
@@ -667,5 +667,25 @@ header {
         border: 1px solid $main-yellow;
       }
     }
+  }
+}
+
+.partners {
+  background-color: $main-light-gray;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-style: italic;
+    text-align: center;
+    color: $deep-blue;
+  }
+
+  .partner {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4.5rem;
   }
 }

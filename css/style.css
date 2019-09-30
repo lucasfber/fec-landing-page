@@ -630,4 +630,22 @@ header .overlay .navbar li a:hover {
   border: 1px solid #e0b06d;
 }
 
+.partners {
+  background-color: #efefef;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.partners h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-style: italic;
+  text-align: center;
+  color: #01061d;
+}
+.partners .partner {
+  display: block;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
