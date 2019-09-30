@@ -552,7 +552,7 @@ header .overlay .navbar li a:hover {
   line-height: 1;
 }
 .membership .membership-banner .btn-join-membership {
-  margin-top: 2.2rem;
+  margin-top: 2.5rem;
   background-color: #ee3124;
   font-size: 1.8rem;
   font-style: italic;
@@ -728,7 +728,7 @@ header .overlay .navbar li a:hover {
   right: 0;
 }
 .footer .footer-logo img {
-  width: 5rem;
+  width: 6.4rem;
 }
 .footer .secondary-links {
   margin-top: 1.6rem;
@@ -741,7 +741,7 @@ header .overlay .navbar li a:hover {
   font-size: 1.2rem;
 }
 .footer .secondary-links p {
-  margin-top: 1.6rem;
+  margin-top: 2rem;
   text-align: center;
   font-size: 1.2rem;
 }
