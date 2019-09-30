@@ -99,6 +99,12 @@ header {
   padding: 1.6rem;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin-bottom: 9.9rem;
 }
 header .btn-menu {
   width: 2rem;
@@ -200,6 +206,10 @@ header .overlay .navbar li a {
 header .overlay .navbar li a:hover {
   color: #ba8843;
   color: #ee3124;
+}
+
+main {
+  margin-top: 9.9rem;
 }
 
 /* Last News Showase */
